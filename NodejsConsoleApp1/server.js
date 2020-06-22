@@ -88,7 +88,7 @@ app.post("/Login", function (req, res) {
                     else if (!result) { /// Handling wrong password result 
 
                         res.sendStatus(401);
-                        console.log("nie pasuje " + result);
+                        console.log("wrong password " + result);
                     }
                     else {
                         res.sendStatus(500);
@@ -180,7 +180,7 @@ app.post("/ProductNew", function (req, res) {
                 res.sendStatus(500);
             }
             else {
-                console.log("dobsze")
+                console.log("good")
                 res.sendStatus(200);
                
                    
